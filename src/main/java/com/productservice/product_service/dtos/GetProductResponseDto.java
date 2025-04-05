@@ -9,4 +9,11 @@ import lombok.Setter;
 public class GetProductResponseDto {
     private GetProductDto product;
 
+    public GetProductDto getProduct() {
+        return product;
+    }
+
+    public void setProduct(GetProductDto product) {
+        this.product = product;
+    }
 }

@@ -8,4 +8,12 @@ import lombok.Setter;
 @Setter
 public class CreateProductResponseDto {
     private CreateProductDto createProductDto;
+
+    public CreateProductDto getCreateProductDto() {
+        return createProductDto;
+    }
+
+    public void setCreateProductDto(CreateProductDto createProductDto) {
+        this.createProductDto = createProductDto;
+    }
 }

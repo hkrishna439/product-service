@@ -1,6 +1,7 @@
 package com.productservice.product_service.dtos;
 
 
+import com.productservice.product_service.models.Category;
 import com.productservice.product_service.models.Product;
 
 public class CreateProductRequestDto {
@@ -56,7 +57,8 @@ public class CreateProductRequestDto {
         product.setDescription(this.description);
         product.setPrice(this.price);
         product.setImageUrl(this.imageUrl);
-        product.setCategoryName(this.categoryName);
+        Category category = new Category();
+        product.setCategory(category);
 
         return product;
     }

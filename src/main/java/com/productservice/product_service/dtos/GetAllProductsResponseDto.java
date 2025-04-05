@@ -9,4 +9,12 @@ import java.util.List;
 @Setter
 public class GetAllProductsResponseDto {
     private List<GetProductDto> products;
+
+    public List<GetProductDto> getProducts() {
+        return products;
+    }
+
+    public void setProducts(List<GetProductDto> products) {
+        this.products = products;
+    }
 }
