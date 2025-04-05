@@ -58,6 +58,7 @@ public class CreateProductRequestDto {
         product.setPrice(this.price);
         product.setImageUrl(this.imageUrl);
         Category category = new Category();
+        category.setName(categoryName);
         product.setCategory(category);
 
         return product;
